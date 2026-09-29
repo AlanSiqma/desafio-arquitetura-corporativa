@@ -187,8 +187,8 @@ Os documentos de Strategy & Motivation registram:
 - hipóteses arquiteturais;
 - questões em aberto.
 
-- [Strategy & Motivation — Conta de Pagamentos](docs/TOGAF/01-Strategy%20%26%20Motivation/strategy-motivation-cenario-1-conta-pagamentos.md)
-- [Strategy & Motivation — Cashback](docs/TOGAF/01-Strategy%20%26%20Motivation/strategy-motivation-cenario-2-cashback.md)
+- [Strategy & Motivation — Conta de Pagamentos](docs/TOGAF/01-strategy-motivation/strategy-motivation-cenario-1-conta-pagamentos.md)
+- [Strategy & Motivation — Cashback](docs/TOGAF/01-strategy-motivation/strategy-motivation-cenario-2-cashback.md)
 
 ### Fase B — Business Architecture
 
@@ -207,8 +207,8 @@ A Business Architecture detalha:
 - oportunidades;
 - reuso.
 
-- [Business Architecture — Conta de Pagamentos](docs/TOGAF/02-Business%20Architecture/business-architecture-conta-pagamentos.md)
-- [Business Architecture — Cashback com Parcerias](docs/TOGAF/02-Business%20Architecture/business-architecture-cashback-parcerias.md)
+- [Business Architecture — Conta de Pagamentos](docs/TOGAF/02-business-architecture/business-architecture-conta-pagamentos.md)
+- [Business Architecture — Cashback com Parcerias](docs/TOGAF/02-business-architecture/business-architecture-cashback-parcerias.md)
 
 ### Fases C/D — Information Systems / Technology
 
@@ -239,7 +239,7 @@ A Fase E materializa as oportunidades e soluções:
 
 - [Estrangulamentos, TO-BE e Arquitetura Intermediária](docs/arquitetura/estrangulamentos-to-be-arquitetura-intermediaria.md)
 - [Building Blocks — Cashback com Parcerias](docs/arquitetura/building-blocks-cashback-parcerias.md)
-- [Implementation Architecture](docs/TOGAF/05-Implementation%20%26%20Migration/implementation-architecture-togaf.md)
+- [Implementation Architecture](docs/TOGAF/05-implementation-migration/implementation-architecture-togaf.md)
 
 ### Fase F — Migration Planning
 
