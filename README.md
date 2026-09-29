@@ -481,48 +481,77 @@ O case não fornece métricas quantitativas suficientes para inventar requisitos
 
 ---
 
-# 12. Architecture Improvement Proposals
+# 13. Architecture Improvement Proposals (AIP)
 
-As AIPs registram propostas arquiteturais específicas para os dois cenários antes da decisão final.
+## O que é AIP?
 
-- [AIP-001 — Conta de Pagamentos](docs/aip/AIP-001-conta-de-pagamentos.md)
-- [AIP-002 — Cashback com Parcerias](docs/aip/AIP-002-cashback-parcerias.md)
+**AIP — Architecture Improvement Proposal** é uma convenção criada para este projeto pelo autor do repositório, inspirada no conceito de **BIP — Bitcoin Improvement Proposal** utilizado no ecossistema Bitcoin.
 
-A existência das duas AIPs não significa que os dois cenários foram adotados.
-
-A decisão de transformação arquitetural está registrada na ADR-002.
-
----
-
-# 13. ADRs
-
-### ADR-001
-
-Registra a avaliação inicial dos dois cenários e mantém a decisão em aberto naquela etapa.
-
-- [ADR-001 — Cenários Conta de Pagamentos e Cashback](docs/adr/ADR-001-cenarios-conta-pagamentos-cashback.md)
-
-### ADR-002
-
-Registra a decisão posterior:
+A ideia é aplicar a mesma lógica de proposta formal ao contexto de Enterprise Architecture:
 
 ```text
-Cashback + Parcerias
+BIP
+Bitcoin Improvement Proposal
         ↓
-Primeiro veículo de transformação arquitetural
+Proposta formal de mudança
+        ↓
+AIP
+Architecture Improvement Proposal
+        ↓
+Proposta formal de evolução arquitetural
 ```
 
-A decisão:
+O AIP funciona como um mecanismo intermediário entre a identificação de um problema arquitetural e uma eventual decisão formal registrada em ADR.
 
-- não afirma superioridade comercial do Cashback;
-- não elimina Conta de Pagamentos;
-- não aprova nem rejeita Core Banking;
-- estabelece condições para evitar novo silo;
-- direciona a arquitetura para evolução incremental.
+Enquanto o **ADR** registra uma decisão arquitetural, o **AIP** descreve uma proposta de melhoria que pode ser analisada, discutida, comparada e posteriormente aceita, modificada ou descartada.
 
-- [ADR-002 — Decisão do Cenário para Transformação Arquitetural](docs/adr/ADR-002-decisao-cenario-transformacao-arquitetural.md)
+### AIP × ADR
 
----
+A distinção utilizada neste projeto é:
+
+| Artefato | Papel |
+|---|---|
+| AIP | Propõe uma evolução arquitetural |
+| Banca Arquitetural | Debate e analisa a proposta / alternativas |
+| ADR | Registra a decisão arquitetural |
+| TO-BE | Representa o estado arquitetural desejado |
+| Migration Plan | Define como chegar ao estado desejado |
+
+A relação pode ser representada assim:
+
+```text
+Problema
+   ↓
+AIP
+   ↓
+Análise / Trade-offs
+   ↓
+Banca Arquitetural
+   ↓
+ADR
+   ↓
+Arquitetura adotada
+```
+
+O AIP **não é apresentado como uma fase oficial do TOGAF ADM nem como um padrão oficial de Enterprise Architecture**. É uma convenção autoral utilizada neste repositório para organizar e formalizar propostas arquiteturais antes da decisão.
+
+## AIPs deste projeto
+
+### AIP-001 — Conta de Pagamentos
+
+Apresenta uma proposta de evolução arquitetural para o cenário de Conta de Pagamentos.
+
+- [AIP-001 — Conta de Pagamentos](docs/aip/AIP-001-conta-de-pagamentos.md)
+
+### AIP-002 — Cashback com Parcerias
+
+Apresenta uma proposta de evolução arquitetural para o cenário de Cashback com Parcerias.
+
+- [AIP-002 — Cashback com Parcerias](docs/aip/AIP-002-cashback-parcerias.md)
+
+A existência das duas AIPs demonstra que as alternativas foram arquiteturalmente exploradas antes da decisão.
+
+A decisão posterior está registrada na ADR-002.
 
 # 14. Implementation e Migration
 
